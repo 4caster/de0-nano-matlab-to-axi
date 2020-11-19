@@ -1,0 +1,67 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\vtoes\Documents\University\fpga\pc-fpga\fpga\pd_file.qsys --block-symbol-file --output-directory=C:\Users\vtoes\Documents\University\fpga\pc-fpga\fpga\pd_file --family="Cyclone IV E" --part=EP4CE22F17C6
+Progress: Loading fpga/pd_file.qsys
+Progress: Reading input file
+Progress: Adding MATLAB_as_AXI_Master_0 [MATLAB_as_AXI_Master 1.1]
+Progress: Parameterizing module MATLAB_as_AXI_Master_0
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding ledr [altera_avalon_pio 20.1]
+Progress: Parameterizing module ledr
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 20.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\vtoes\Documents\University\fpga\pc-fpga\fpga\pd_file.qsys --synthesis=VHDL --output-directory=C:\Users\vtoes\Documents\University\fpga\pc-fpga\fpga\pd_file\synthesis --family="Cyclone IV E" --part=EP4CE22F17C6
+Progress: Loading fpga/pd_file.qsys
+Progress: Reading input file
+Progress: Adding MATLAB_as_AXI_Master_0 [MATLAB_as_AXI_Master 1.1]
+Progress: Parameterizing module MATLAB_as_AXI_Master_0
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding ledr [altera_avalon_pio 20.1]
+Progress: Parameterizing module ledr
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 20.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: pd_file: Generating pd_file "pd_file" for QUARTUS_SYNTH
+Info: MATLAB_as_AXI_Master_0: "pd_file" instantiated MATLAB_as_AXI_Master "MATLAB_as_AXI_Master_0"
+Info: ledr: Starting RTL generation for module 'pd_file_ledr'
+Info: ledr:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=pd_file_ledr --dir=C:/Users/vtoes/AppData/Local/Temp/alt8584_5387273154712777855.dir/0019_ledr_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/vtoes/AppData/Local/Temp/alt8584_5387273154712777855.dir/0019_ledr_gen//pd_file_ledr_component_configuration.pl  --do_build_sim=0  ]
+Info: ledr: Done RTL generation for module 'pd_file_ledr'
+Info: ledr: "pd_file" instantiated altera_avalon_pio "ledr"
+Info: onchip_memory2_0: Starting RTL generation for module 'pd_file_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=pd_file_onchip_memory2_0 --dir=C:/Users/vtoes/AppData/Local/Temp/alt8584_5387273154712777855.dir/0020_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/vtoes/AppData/Local/Temp/alt8584_5387273154712777855.dir/0020_onchip_memory2_0_gen//pd_file_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'pd_file_onchip_memory2_0'
+Info: onchip_memory2_0: "pd_file" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "pd_file" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "pd_file" instantiated altera_reset_controller "rst_controller"
+Info: MATLAB_as_AXI_Master_0_axm_m0_translator: "mm_interconnect_0" instantiated altera_merlin_axi_translator "MATLAB_as_AXI_Master_0_axm_m0_translator"
+Info: ledr_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "ledr_s1_translator"
+Info: MATLAB_as_AXI_Master_0_axm_m0_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "MATLAB_as_AXI_Master_0_axm_m0_agent"
+Info: ledr_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "ledr_s1_agent"
+Info: ledr_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "ledr_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: ledr_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "ledr_s1_burst_adapter"
+Info: Reusing file C:/Users/vtoes/Documents/University/fpga/pc-fpga/fpga/pd_file/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/vtoes/Documents/University/fpga/pc-fpga/fpga/pd_file/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: pd_file: Done "pd_file" with 19 modules, 35 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,33 @@
+#Quartus intermediate files
+db/
+incremental_db/
+output_files/
+simulation/
+c5_pin_model_dump.txt
+*.qws
+
+#Platform Designer Intermadiate files
+*.sopcinfo
+.qsys_edit/
+nios2_PIOLED_qsys/
+
+#Nios Software Builder tools intermedate files
+software/*_sw_bsp/.settings/
+software/*_sw_bsp/obj/
+software/*_sw_bsp/HAL/
+software/*_sw_bsp/drivers/
+software/*_sw_bsp/*.a
+software/*_sw_bsp/summary.html
+software/*_sw_bsp/Makefile
+software/*_sw_bsp/mem_init.mk
+software/*_sw_bsp/public.mk
+software/*_sw_bsp/system.h
+
+software/*_sw/.settings/
+software/*_sw/obj/
+software/*_sw/*.map
+software/*_sw/*.elf
+software/*_sw/*.objdump
+
+software/.metadata/
+software/RemoteSystemsTempFiles/
